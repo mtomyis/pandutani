@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.uiuaadingding.tomtom.pandutani">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:screenOrientation="portrait"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".a_menu.MainActivity"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".a_menu.DaftarActivity"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
+        <activity
+            android:name=".a_menu.LoginActivity"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
+        <activity android:name=".a_menu.TentangActivity" />
+        <activity android:name=".a_menu.LupaActivity" />
+        <activity android:name=".b_pilihmenu.PilihProsedurActivity" />
+        <activity android:name=".b_pilihmenu.PilihTanampanganActivity" />
+        <activity android:name=".b_pilihmenu.PilihHamaActivity" />
+        <activity android:name=".b_pilihmenu.PilihPengingatActivity" />
+        <activity android:name=".d_detailmenu.DetailHamaActivity" />
+        <activity android:name=".c_lihatmenu.LihatPengingatPadiActivity" />
+        <activity android:name=".d_detailmenu.DetailProsedurActivity" />
+        <activity android:name=".d_detailmenu.DetailTanampanganActivity" />
+        <activity android:name=".c_lihatmenu.LihatHamaActivity" />
+        <activity android:name=".c_lihatmenu.LihatProsedurActivity" />
+        <activity android:name=".d_detailmenu.DetailPengingatActivity" />
+
+        <service android:name=".pengingat_jagung.jtgl1.ScheduleServicej" />
+        <service android:name=".pengingat_jagung.jtgl1.NotifyServicej" />
+        <service android:name=".pengingat_jagung.jtgl2.ScheduleServicej2" />
+        <service android:name=".pengingat_jagung.jtgl2.NotifyServicej2" />
+        <service android:name=".pengingat_jagung.jtgl3.ScheduleServicej3" />
+        <service android:name=".pengingat_jagung.jtgl3.NotifyServicej3" />
+        <service android:name=".pengingat_jagung.jtgl4.ScheduleServicej4" />
+        <service android:name=".pengingat_jagung.jtgl4.NotifyServicej4" />
+        <service android:name=".pengingat_jagung.jtgl5.ScheduleServicej5" />
+        <service android:name=".pengingat_jagung.jtgl5.NotifyServicej5" />
+        <service android:name=".pengingat_jagung.jtgl6.ScheduleServicej6" />
+        <service android:name=".pengingat_jagung.jtgl6.NotifyServicej6" />
+        <service android:name=".pengingat_jagung.jtgl7.ScheduleServicej7" />
+        <service android:name=".pengingat_jagung.jtgl7.NotifyServicej7" />
+        <service android:name=".pengingat_jagung.jtgl8.ScheduleServicej8" />
+        <service android:name=".pengingat_jagung.jtgl8.NotifyServicej8" />
+        <service android:name=".pengingat_jagung.jtgl9.ScheduleServicej9" />
+        <service android:name=".pengingat_jagung.jtgl9.NotifyServicej9" />
+        <service android:name=".pengingat_jagung.jtgl10.ScheduleServicej10" />
+        <service android:name=".pengingat_jagung.jtgl10.NotifyServicej10" />
+        <service android:name=".pengingat_jagung.jtgl11.ScheduleServicej11" />
+        <service android:name=".pengingat_jagung.jtgl11.NotifyServicej11" />
+        <service android:name=".pengingat_jagung.jtgl12.ScheduleServicej12" />
+        <service android:name=".pengingat_jagung.jtgl12.NotifyServicej12" />
+        <service android:name=".pengingat_jagung.jtgl13.ScheduleServicej13" />
+        <service android:name=".pengingat_jagung.jtgl13.NotifyServicej13" />
+        <service android:name=".pengingat_jagung.jtgl14.ScheduleServicej14" />
+        <service android:name=".pengingat_jagung.jtgl14.NotifyServicej14" />
+
+        <service android:name=".pengingat_padi.tgl1.ScheduleService" />
+        <service android:name=".pengingat_padi.tgl1.NotifyService" />
+        <service android:name=".pengingat_padi.tgl2.ScheduleService2" />
+        <service android:name=".pengingat_padi.tgl2.NotifyService2" />
+        <service android:name=".pengingat_padi.tgl3.ScheduleService3" />
+        <service android:name=".pengingat_padi.tgl3.NotifyService3" />
+        <service android:name=".pengingat_padi.tgl4.ScheduleService4" />
+        <service android:name=".pengingat_padi.tgl4.NotifyService4" />
+        <service android:name=".pengingat_padi.tgl5.ScheduleService5" />
+        <service android:name=".pengingat_padi.tgl5.NotifyService5" />
+        <service android:name=".pengingat_padi.tgl6.ScheduleService6" />
+        <service android:name=".pengingat_padi.tgl6.NotifyService6" />
+        <service android:name=".pengingat_padi.tgl7.ScheduleService7" />
+        <service android:name=".pengingat_padi.tgl7.NotifyService7" />
+        <service android:name=".pengingat_padi.tgl8.ScheduleService8" />
+        <service android:name=".pengingat_padi.tgl8.NotifyService8" />
+        <service android:name=".pengingat_padi.tgl9.ScheduleService9" />
+        <service android:name=".pengingat_padi.tgl9.NotifyService9" />
+        <service android:name=".pengingat_padi.tgl10.ScheduleService10" />
+        <service android:name=".pengingat_padi.tgl10.NotifyService10" />
+        <service android:name=".pengingat_padi.tgl11.ScheduleService11" />
+        <service android:name=".pengingat_padi.tgl11.NotifyService11" />
+        <service android:name=".pengingat_padi.tgl12.ScheduleService12" />
+        <service android:name=".pengingat_padi.tgl12.NotifyService12" />
+        <service android:name=".pengingat_padi.tgl13.ScheduleService13" />
+        <service android:name=".pengingat_padi.tgl13.NotifyService13" />
+        <service android:name=".pengingat_padi.tgl14.ScheduleService14" />
+        <service android:name=".pengingat_padi.tgl14.NotifyService14" />
+        <service android:name=".pengingat_padi.tgl15.ScheduleService15" />
+        <service android:name=".pengingat_padi.tgl15.NotifyService15" />
+
+        <service android:name=".pengingat_kedelai.ktgl1.ScheduleServicek" />
+        <service android:name=".pengingat_kedelai.ktgl1.NotifyServicek" />
+        <service android:name=".pengingat_kedelai.ktgl2.ScheduleServicek2" />
+        <service android:name=".pengingat_kedelai.ktgl2.NotifyServicek2" />
+        <service android:name=".pengingat_kedelai.ktgl3.ScheduleServicek3" />
+        <service android:name=".pengingat_kedelai.ktgl3.NotifyServicek3" />
+        <service android:name=".pengingat_kedelai.ktgl4.ScheduleServicek4" />
+        <service android:name=".pengingat_kedelai.ktgl4.NotifyServicek4" />
+        <service android:name=".pengingat_kedelai.ktgl5.ScheduleServicek5" />
+        <service android:name=".pengingat_kedelai.ktgl5.NotifyServicek5" />
+        <service android:name=".pengingat_kedelai.ktgl6.ScheduleServicek6" />
+        <service android:name=".pengingat_kedelai.ktgl6.NotifyServicek6" />
+        <service android:name=".pengingat_kedelai.ktgl7.ScheduleServicek7" />
+        <service android:name=".pengingat_kedelai.ktgl7.NotifyServicek7" />
+        <service android:name=".pengingat_kedelai.ktgl8.ScheduleServicek8" />
+        <service android:name=".pengingat_kedelai.ktgl8.NotifyServicek8" />
+        <service android:name=".pengingat_kedelai.ktgl9.ScheduleServicek9" />
+        <service android:name=".pengingat_kedelai.ktgl9.NotifyServicek9" />
+        <service android:name=".pengingat_kedelai.ktgl10.ScheduleServicek10" />
+        <service android:name=".pengingat_kedelai.ktgl10.NotifyServicek10" />
+        <service android:name=".pengingat_kedelai.ktgl11.ScheduleServicek11" />
+        <service android:name=".pengingat_kedelai.ktgl11.NotifyServicek11" />
+        <service android:name=".pengingat_kedelai.ktgl12.ScheduleServicek12" />
+        <service android:name=".pengingat_kedelai.ktgl12.NotifyServicek12" />
+        <service android:name=".pengingat_kedelai.ktgl13.ScheduleServicek13" />
+        <service android:name=".pengingat_kedelai.ktgl13.NotifyServicek13" />
+
+        <service android:name=".pengingat_ubi.utgl1.ScheduleServiceu" />
+        <service android:name=".pengingat_ubi.utgl1.NotifyServiceu" />
+        <service android:name=".pengingat_ubi.utgl2.ScheduleServiceu2" />
+        <service android:name=".pengingat_ubi.utgl2.NotifyServiceu2" />
+        <service android:name=".pengingat_ubi.utgl3.ScheduleServiceu3" />
+        <service android:name=".pengingat_ubi.utgl3.NotifyServiceu3" />
+        <service android:name=".pengingat_ubi.utgl4.ScheduleServiceu4" />
+        <service android:name=".pengingat_ubi.utgl4.NotifyServiceu4" />
+        <service android:name=".pengingat_ubi.utgl5.ScheduleServiceu5" />
+        <service android:name=".pengingat_ubi.utgl5.NotifyServiceu5" />
+        <service android:name=".pengingat_ubi.utgl6.ScheduleServiceu6" />
+        <service android:name=".pengingat_ubi.utgl6.NotifyServiceu6" />
+        <service android:name=".pengingat_ubi.utgl7.ScheduleServiceu7" />
+        <service android:name=".pengingat_ubi.utgl7.NotifyServiceu7" />
+        <service android:name=".pengingat_ubi.utgl8.ScheduleServiceu8" />
+        <service android:name=".pengingat_ubi.utgl8.NotifyServiceu8" />
+        <service android:name=".pengingat_ubi.utgl9.ScheduleServiceu9" />
+        <service android:name=".pengingat_ubi.utgl9.NotifyServiceu9" />
+        <service android:name=".pengingat_ubi.utgl10.ScheduleServiceu10" />
+        <service android:name=".pengingat_ubi.utgl10.NotifyServiceu10" />
+
+        <activity android:name=".c_lihatmenu.LihatPengingatJagungActivity" />
+        <activity android:name=".pakar.padi.MonitorHamaActivity" />
+        <activity android:name=".pakar.padi.HasilActivity" />
+        <activity android:name=".pakar.bwd.BwdActivity" >
+
+        </activity>
+        <activity android:name=".pakar.bwd.HasilBwdActivity" />
+        <activity android:name=".diskusi.DiskusiActivity" />
+        <activity android:name=".diskusi.PesanActivity" />
+        <activity android:name=".diskusi.TambahTopikActivity" />
+        <activity android:name=".pakar.jagung.MonitorHamaJaActivity" />
+        <activity android:name=".pakar.jagung.HasilJaActivity" />
+        <activity android:name=".pakar.kedelai.MonitorHamaKeActivity" />
+        <activity android:name=".pakar.kedelai.HasilKeActivity" />
+        <activity android:name=".pakar.ubi.MonitorHamaUbActivity" />
+        <activity android:name=".pakar.ubi.HasilUbActivity" />
+        <activity android:name=".c_lihatmenu.LihatPengingatKedelaiActivity" />
+        <activity android:name=".c_lihatmenu.LihatPengingatUbiActivity"></activity>
+    </application>
+
+</manifest>

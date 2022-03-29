@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="genres">
+        <item>Padi</item>
+        <item>Jagung</item>
+        <item>Kedelai</item>
+        <item>Ubi</item>
+        <item>Lainnya</item>
+    </string-array>
+</resources>

@@ -1,0 +1,1256 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".c_lihatmenu.LihatPengingatJagungActivity"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="90dp"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:background="@color/color"
+        android:orientation="vertical"
+        android:padding="3dp">
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:layout_marginRight="8dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginBottom="5dp"
+                android:weightSum="5"
+                android:layout_gravity="center">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="3"
+                    android:paddingTop="10dp"
+                    android:paddingLeft="10dp"
+                    android:textStyle="bold"
+                    android:textColor="@android:color/black"
+                    android:textSize="16sp"
+                    android:text="Tanggal Olah Lahan" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_weight="2"
+                    android:orientation="horizontal"
+                    android:weightSum="3"
+                    android:layout_height="match_parent">
+
+                    <EditText
+                        android:id="@+id/tv_ambiltanggalj"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:inputType="date"
+                        android:ems="12"
+                        android:focusable="false"
+                        android:gravity="start|center"
+                        android:paddingLeft="10dp"
+                        android:textColor="@android:color/black"
+                        android:textSize="13sp"
+                        android:text="Pilih Tanggal" />
+                    <Button
+                        android:id="@+id/btn_hitungj"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:layout_weight="2"
+                        android:textAllCaps="false"
+                        android:textColor="@android:color/white"
+                        android:background="@color/colorPrimary"
+                        android:textSize="13sp"
+                        android:text="Hitung" />
+                </LinearLayout>
+            </LinearLayout>
+        </FrameLayout>
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:layout_height="match_parent">
+
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/idbtntglJ1"
+                android:layout_marginRight="8dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginTop="8dp"
+                app:cardCornerRadius="8dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="90dp"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:padding="3dp">
+
+                    <FrameLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="vertical"
+                            android:weightSum="5"
+                            android:layout_gravity="center">
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_weight="3"
+                                android:paddingTop="10dp"
+                                android:paddingLeft="10dp"
+                                android:onClick="jtgl1"
+                                android:textStyle="bold"
+                                android:textColor="@android:color/black"
+                                android:textSize="16sp"
+                                android:text="Penanaman" />
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_weight="2"
+                                android:orientation="horizontal"
+                                android:weightSum="3"
+                                android:layout_height="match_parent">
+
+                                <TextView
+                                    android:id="@+id/j_tgl1"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="1"
+                                    android:gravity="start|center"
+                                    android:paddingLeft="10dp"
+                                    android:textColor="@android:color/black"
+                                    android:textSize="13sp"
+                                    android:text="tanggal" />
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:gravity="center"
+                                    android:layout_weight="1"
+                                    android:textColor="@android:color/black"
+                                    android:textSize="13sp"
+                                    android:text="Sampai" />
+                                <TextView
+                                    android:id="@+id/j_tgl1_2"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:gravity="center"
+                                    android:layout_weight="1"
+                                    android:textColor="@android:color/black"
+                                    android:textSize="13sp"
+                                    android:text="tanggal" />
+                            </LinearLayout>
+                        </LinearLayout>
+                    </FrameLayout>
+                </LinearLayout>
+
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="8dp"
+                android:id="@+id/idbtntglJ2"
+                android:layout_marginLeft="8dp"
+                android:layout_marginTop="8dp"
+                app:cardCornerRadius="8dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="90dp"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:padding="3dp">
+
+                    <FrameLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="vertical"
+                            android:weightSum="5"
+                            android:layout_gravity="center">
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_weight="3"
+                                android:paddingTop="10dp"
+                                android:paddingLeft="10dp"
+                                android:textStyle="bold"
+                                android:onClick="jtgl2"
+                                android:textColor="@android:color/black"
+                                android:textSize="16sp"
+                                android:text="Pemupukan" />
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_weight="2"
+                                android:orientation="horizontal"
+                                android:weightSum="3"
+                                android:layout_height="match_parent">
+
+                                <TextView
+                                    android:id="@+id/j_tgl2"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="1"
+                                    android:gravity="start|center"
+                                    android:paddingLeft="10dp"
+                                    android:textColor="@android:color/black"
+                                    android:textSize="13sp"
+                                    android:text="tanggal" />
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:gravity="center"
+                                    android:layout_weight="1"
+                                    android:textColor="@android:color/black"
+                                    android:textSize="13sp"
+                                    android:text="Sampai" />
+                                <TextView
+                                    android:id="@+id/j_tgl2_2"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:gravity="center"
+                                    android:layout_weight="1"
+                                    android:textColor="@android:color/black"
+                                    android:textSize="13sp"
+                                    android:text="tanggal" />
+                            </LinearLayout>
+                        </LinearLayout>
+                    </FrameLayout>
+                </LinearLayout>
+
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="8dp"
+                android:id="@+id/idbtntglJ3"
+                android:layout_marginLeft="8dp"
+                android:layout_marginTop="8dp"
+                app:cardCornerRadius="8dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="90dp"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:padding="3dp">
+
+                    <FrameLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="vertical"
+                            android:weightSum="5"
+                            android:layout_gravity="center">
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_weight="3"
+                                android:paddingTop="10dp"
+                                android:paddingLeft="10dp"
+                                android:textStyle="bold"
+                                android:onClick="jtgl3"
+                                android:textColor="@android:color/black"
+                                android:textSize="16sp"
+                                android:text="Penyiangan" />
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_weight="2"
+                                android:orientation="horizontal"
+                                android:weightSum="3"
+                                android:layout_height="match_parent">
+
+                                <TextView
+                                    android:id="@+id/j_tgl3"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="1"
+                                    android:gravity="start|center"
+                                    android:paddingLeft="10dp"
+                                    android:textColor="@android:color/black"
+                                    android:textSize="13sp"
+                                    android:text="tanggal" />
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:gravity="center"
+                                    android:layout_weight="1"
+                                    android:textColor="@android:color/black"
+                                    android:textSize="13sp"
+                                    android:text="Sampai" />
+                                <TextView
+                                    android:id="@+id/j_tgl3_2"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:gravity="center"
+                                    android:layout_weight="1"
+                                    android:textColor="@android:color/black"
+                                    android:textSize="13sp"
+                                    android:text="tanggal" />
+                            </LinearLayout>
+                        </LinearLayout>
+                    </FrameLayout>
+                </LinearLayout>
+
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="8dp"
+                android:id="@+id/idbtntglJ4"
+                android:layout_marginLeft="8dp"
+                android:layout_marginTop="8dp"
+                app:cardCornerRadius="8dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="90dp"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:padding="3dp">
+
+                    <FrameLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="vertical"
+                            android:weightSum="5"
+                            android:layout_gravity="center">
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_weight="3"
+                                android:paddingTop="10dp"
+                                android:onClick="jtgl4"
+                                android:paddingLeft="10dp"
+                                android:textStyle="bold"
+                                android:textColor="@android:color/black"
+                                android:textSize="16sp"
+                                android:text="Pengairan" />
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_weight="2"
+                                android:orientation="horizontal"
+                                android:weightSum="3"
+                                android:layout_height="match_parent">
+
+                                <TextView
+                                    android:id="@+id/j_tgl4"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="1"
+                                    android:gravity="start|center"
+                                    android:paddingLeft="10dp"
+                                    android:textColor="@android:color/black"
+                                    android:textSize="13sp"
+                                    android:text="tanggal" />
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:gravity="center"
+                                    android:layout_weight="1"
+                                    android:textColor="@android:color/black"
+                                    android:textSize="13sp"
+                                    android:text="Sampai" />
+                                <TextView
+                                    android:id="@+id/j_tgl4_2"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:gravity="center"
+                                    android:layout_weight="1"
+                                    android:textColor="@android:color/black"
+                                    android:textSize="13sp"
+                                    android:text="tanggal" />
+                            </LinearLayout>
+                        </LinearLayout>
+                    </FrameLayout>
+                </LinearLayout>
+
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="8dp"
+                android:id="@+id/idbtntglJ5"
+                android:layout_marginLeft="8dp"
+                android:layout_marginTop="8dp"
+                app:cardCornerRadius="8dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="90dp"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:padding="3dp">
+
+                    <FrameLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="vertical"
+                            android:weightSum="5"
+                            android:layout_gravity="center">
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_weight="3"
+                                android:paddingTop="10dp"
+                                android:paddingLeft="10dp"
+                                android:textStyle="bold"
+                                android:onClick="jtgl5"
+                                android:textColor="@android:color/black"
+                                android:textSize="16sp"
+                                android:text="Pemupukan Tahap 2" />
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_weight="2"
+                                android:orientation="horizontal"
+                                android:weightSum="3"
+                                android:layout_height="match_parent">
+
+                                <TextView
+                                    android:id="@+id/j_tgl5"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="1"
+                                    android:gravity="start|center"
+                                    android:paddingLeft="10dp"
+                                    android:textColor="@android:color/black"
+                                    android:textSize="13sp"
+                                    android:text="tanggal" />
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:gravity="center"
+                                    android:layout_weight="1"
+                                    android:textColor="@android:color/black"
+                                    android:textSize="13sp"
+                                    android:text="Sampai" />
+                                <TextView
+                                    android:id="@+id/j_tgl5_2"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:gravity="center"
+                                    android:layout_weight="1"
+                                    android:textColor="@android:color/black"
+                                    android:textSize="13sp"
+                                    android:text="tanggal" />
+                            </LinearLayout>
+                        </LinearLayout>
+                    </FrameLayout>
+                </LinearLayout>
+
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="8dp"
+                android:id="@+id/idbtntglJ6"
+                android:layout_marginLeft="8dp"
+                android:layout_marginTop="8dp"
+                app:cardCornerRadius="8dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="90dp"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:padding="3dp">
+
+                    <FrameLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="vertical"
+                            android:weightSum="5"
+                            android:layout_gravity="center">
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_weight="3"
+                                android:paddingTop="10dp"
+                                android:paddingLeft="10dp"
+                                android:onClick="jtgl6"
+                                android:textStyle="bold"
+                                android:textColor="@android:color/black"
+                                android:textSize="16sp"
+                                android:text="Monitor Hama" />
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_weight="2"
+                                android:orientation="horizontal"
+                                android:weightSum="3"
+                                android:layout_height="match_parent">
+
+                                <TextView
+                                    android:id="@+id/j_tgl6"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="1"
+                                    android:gravity="start|center"
+                                    android:paddingLeft="10dp"
+                                    android:textColor="@android:color/black"
+                                    android:textSize="13sp"
+                                    android:text="tanggal" />
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:gravity="center"
+                                    android:layout_weight="1"
+                                    android:textColor="@android:color/black"
+                                    android:textSize="13sp"
+                                    android:text="Sampai" />
+                                <TextView
+                                    android:id="@+id/j_tgl6_2"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:gravity="center"
+                                    android:layout_weight="1"
+                                    android:textColor="@android:color/black"
+                                    android:textSize="13sp"
+                                    android:text="tanggal" />
+                            </LinearLayout>
+                        </LinearLayout>
+                    </FrameLayout>
+                </LinearLayout>
+
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="8dp"
+                android:id="@+id/idbtntglJ7"
+                android:layout_marginLeft="8dp"
+                android:layout_marginTop="8dp"
+                app:cardCornerRadius="8dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="90dp"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:padding="3dp">
+
+                    <FrameLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="vertical"
+                            android:weightSum="5"
+                            android:layout_gravity="center">
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_weight="3"
+                                android:paddingTop="10dp"
+                                android:paddingLeft="10dp"
+                                android:onClick="jtgl7"
+                                android:textStyle="bold"
+                                android:textColor="@android:color/black"
+                                android:textSize="16sp"
+                                android:text="Pengairan" />
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_weight="2"
+                                android:orientation="horizontal"
+                                android:weightSum="3"
+                                android:layout_height="match_parent">
+
+                                <TextView
+                                    android:id="@+id/j_tgl7"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="1"
+                                    android:gravity="start|center"
+                                    android:paddingLeft="10dp"
+                                    android:textColor="@android:color/black"
+                                    android:textSize="13sp"
+                                    android:text="tanggal" />
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:gravity="center"
+                                    android:layout_weight="1"
+                                    android:textColor="@android:color/black"
+                                    android:textSize="13sp"
+                                    android:text="Sampai" />
+                                <TextView
+                                    android:id="@+id/j_tgl7_2"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:gravity="center"
+                                    android:layout_weight="1"
+                                    android:textColor="@android:color/black"
+                                    android:textSize="13sp"
+                                    android:text="tanggal" />
+                            </LinearLayout>
+                        </LinearLayout>
+                    </FrameLayout>
+                </LinearLayout>
+
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="8dp"
+                android:id="@+id/idbtntglJ8"
+                android:layout_marginLeft="8dp"
+                android:layout_marginTop="8dp"
+                app:cardCornerRadius="8dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="90dp"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:padding="3dp">
+
+                    <FrameLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="vertical"
+                            android:weightSum="5"
+                            android:layout_gravity="center">
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_weight="3"
+                                android:paddingTop="10dp"
+                                android:paddingLeft="10dp"
+                                android:onClick="jtgl8"
+                                android:textStyle="bold"
+                                android:textColor="@android:color/black"
+                                android:textSize="16sp"
+                                android:text="Pemupukan Menggunakan BWD" />
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_weight="2"
+                                android:orientation="horizontal"
+                                android:weightSum="3"
+                                android:layout_height="match_parent">
+
+                                <TextView
+                                    android:id="@+id/j_tgl8"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="1"
+                                    android:gravity="start|center"
+                                    android:paddingLeft="10dp"
+                                    android:textColor="@android:color/black"
+                                    android:textSize="13sp"
+                                    android:text="tanggal" />
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:gravity="center"
+                                    android:layout_weight="1"
+                                    android:textColor="@android:color/black"
+                                    android:textSize="13sp"
+                                    android:text="Sampai" />
+                                <TextView
+                                    android:id="@+id/j_tgl8_2"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:gravity="center"
+                                    android:layout_weight="1"
+                                    android:textColor="@android:color/black"
+                                    android:textSize="13sp"
+                                    android:text="tanggal" />
+                            </LinearLayout>
+                        </LinearLayout>
+                    </FrameLayout>
+                </LinearLayout>
+
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="8dp"
+                android:id="@+id/idbtntglJ9"
+                android:layout_marginLeft="8dp"
+                android:layout_marginTop="8dp"
+                app:cardCornerRadius="8dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="90dp"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:padding="3dp">
+
+                    <FrameLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="vertical"
+                            android:weightSum="5"
+                            android:layout_gravity="center">
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_weight="3"
+                                android:paddingTop="10dp"
+                                android:onClick="jtgl9"
+                                android:paddingLeft="10dp"
+                                android:textStyle="bold"
+                                android:textColor="@android:color/black"
+                                android:textSize="16sp"
+                                android:text="Monitor Hama Tahap 2" />
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_weight="2"
+                                android:orientation="horizontal"
+                                android:weightSum="3"
+                                android:layout_height="match_parent">
+
+                                <TextView
+                                    android:id="@+id/j_tgl9"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="1"
+                                    android:gravity="start|center"
+                                    android:paddingLeft="10dp"
+                                    android:textColor="@android:color/black"
+                                    android:textSize="13sp"
+                                    android:text="tanggal" />
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:gravity="center"
+                                    android:layout_weight="1"
+                                    android:textColor="@android:color/black"
+                                    android:textSize="13sp"
+                                    android:text="Sampai" />
+                                <TextView
+                                    android:id="@+id/j_tgl9_2"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:gravity="center"
+                                    android:layout_weight="1"
+                                    android:textColor="@android:color/black"
+                                    android:textSize="13sp"
+                                    android:text="tanggal" />
+                            </LinearLayout>
+                        </LinearLayout>
+                    </FrameLayout>
+                </LinearLayout>
+
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="8dp"
+                android:id="@+id/idbtntglJ10"
+                android:layout_marginLeft="8dp"
+                android:layout_marginTop="8dp"
+                app:cardCornerRadius="8dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="90dp"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:padding="3dp">
+
+                    <FrameLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="vertical"
+                            android:weightSum="5"
+                            android:layout_gravity="center">
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_weight="3"
+                                android:paddingTop="10dp"
+                                android:paddingLeft="10dp"
+                                android:textStyle="bold"
+                                android:onClick="jtgl10"
+                                android:textColor="@android:color/black"
+                                android:textSize="16sp"
+                                android:text="Pengairan" />
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_weight="2"
+                                android:orientation="horizontal"
+                                android:weightSum="3"
+                                android:layout_height="match_parent">
+
+                                <TextView
+                                    android:id="@+id/j_tgl10"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="1"
+                                    android:gravity="start|center"
+                                    android:paddingLeft="10dp"
+                                    android:textColor="@android:color/black"
+                                    android:textSize="13sp"
+                                    android:text="tanggal" />
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:gravity="center"
+                                    android:layout_weight="1"
+                                    android:textColor="@android:color/black"
+                                    android:textSize="13sp"
+                                    android:text="Sampai" />
+                                <TextView
+                                    android:id="@+id/j_tgl10_2"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:gravity="center"
+                                    android:layout_weight="1"
+                                    android:textColor="@android:color/black"
+                                    android:textSize="13sp"
+                                    android:text="tanggal" />
+                            </LinearLayout>
+                        </LinearLayout>
+                    </FrameLayout>
+                </LinearLayout>
+
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="8dp"
+                android:id="@+id/idbtntglJ11"
+                android:layout_marginLeft="8dp"
+                android:layout_marginTop="8dp"
+                app:cardCornerRadius="8dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="90dp"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:padding="3dp">
+
+                    <FrameLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="vertical"
+                            android:weightSum="5"
+                            android:layout_gravity="center">
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_weight="3"
+                                android:paddingTop="10dp"
+                                android:paddingLeft="10dp"
+                                android:onClick="jtgl11"
+                                android:textStyle="bold"
+                                android:textColor="@android:color/black"
+                                android:textSize="16sp"
+                                android:text="Pengairan" />
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_weight="2"
+                                android:orientation="horizontal"
+                                android:weightSum="3"
+                                android:layout_height="match_parent">
+
+                                <TextView
+                                    android:id="@+id/j_tgl11"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="1"
+                                    android:gravity="start|center"
+                                    android:paddingLeft="10dp"
+                                    android:textColor="@android:color/black"
+                                    android:textSize="13sp"
+                                    android:text="tanggal" />
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:gravity="center"
+                                    android:layout_weight="1"
+                                    android:textColor="@android:color/black"
+                                    android:textSize="13sp"
+                                    android:text="Sampai" />
+                                <TextView
+                                    android:id="@+id/j_tgl11_2"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:gravity="center"
+                                    android:layout_weight="1"
+                                    android:textColor="@android:color/black"
+                                    android:textSize="13sp"
+                                    android:text="tanggal" />
+                            </LinearLayout>
+                        </LinearLayout>
+                    </FrameLayout>
+                </LinearLayout>
+
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="8dp"
+                android:id="@+id/idbtntglJ12"
+                android:layout_marginLeft="8dp"
+                android:layout_marginTop="8dp"
+                app:cardCornerRadius="8dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="90dp"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:padding="3dp">
+
+                    <FrameLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="vertical"
+                            android:weightSum="5"
+                            android:layout_gravity="center">
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_weight="3"
+                                android:paddingTop="10dp"
+                                android:paddingLeft="10dp"
+                                android:textStyle="bold"
+                                android:onClick="jtgl12"
+                                android:textColor="@android:color/black"
+                                android:textSize="16sp"
+                                android:text="Pengairan" />
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_weight="2"
+                                android:orientation="horizontal"
+                                android:weightSum="3"
+                                android:layout_height="match_parent">
+
+                                <TextView
+                                    android:id="@+id/j_tgl12"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="1"
+                                    android:gravity="start|center"
+                                    android:paddingLeft="10dp"
+                                    android:textColor="@android:color/black"
+                                    android:textSize="13sp"
+                                    android:text="tanggal" />
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:gravity="center"
+                                    android:layout_weight="1"
+                                    android:textColor="@android:color/black"
+                                    android:textSize="13sp"
+                                    android:text="Sampai" />
+                                <TextView
+                                    android:id="@+id/j_tgl12_2"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:gravity="center"
+                                    android:layout_weight="1"
+                                    android:textColor="@android:color/black"
+                                    android:textSize="13sp"
+                                    android:text="tanggal" />
+                            </LinearLayout>
+                        </LinearLayout>
+                    </FrameLayout>
+                </LinearLayout>
+
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="8dp"
+                android:id="@+id/idbtntglJ13"
+                android:layout_marginLeft="8dp"
+                android:layout_marginTop="8dp"
+                app:cardCornerRadius="8dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="90dp"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:padding="3dp">
+
+                    <FrameLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="vertical"
+                            android:weightSum="5"
+                            android:layout_gravity="center">
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_weight="3"
+                                android:paddingTop="10dp"
+                                android:paddingLeft="10dp"
+                                android:onClick="jtgl13"
+                                android:textStyle="bold"
+                                android:textColor="@android:color/black"
+                                android:textSize="16sp"
+                                android:text="Panen" />
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_weight="2"
+                                android:orientation="horizontal"
+                                android:weightSum="3"
+                                android:layout_height="match_parent">
+
+                                <TextView
+                                    android:id="@+id/j_tgl13"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="1"
+                                    android:gravity="start|center"
+                                    android:paddingLeft="10dp"
+                                    android:textColor="@android:color/black"
+                                    android:textSize="13sp"
+                                    android:text="tanggal" />
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:gravity="center"
+                                    android:layout_weight="1"
+                                    android:textColor="@android:color/black"
+                                    android:textSize="13sp"
+                                    android:text="Sampai" />
+                                <TextView
+                                    android:id="@+id/j_tgl13_2"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:gravity="center"
+                                    android:layout_weight="1"
+                                    android:textColor="@android:color/black"
+                                    android:textSize="13sp"
+                                    android:text="tanggal" />
+                            </LinearLayout>
+                        </LinearLayout>
+                    </FrameLayout>
+                </LinearLayout>
+
+            </android.support.v7.widget.CardView>
+
+            <!--<android.support.v7.widget.CardView-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_marginRight="8dp"-->
+                <!--android:id="@+id/idbtntglJ14"-->
+                <!--android:layout_marginLeft="8dp"-->
+                <!--android:layout_marginTop="8dp"-->
+                <!--app:cardCornerRadius="8dp">-->
+
+                <!--<LinearLayout-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="90dp"-->
+                    <!--android:layout_gravity="center"-->
+                    <!--android:gravity="center"-->
+                    <!--android:orientation="vertical"-->
+                    <!--android:padding="3dp">-->
+
+                    <!--<FrameLayout-->
+                        <!--android:layout_width="match_parent"-->
+                        <!--android:layout_height="match_parent">-->
+
+                        <!--<LinearLayout-->
+                            <!--android:layout_width="match_parent"-->
+                            <!--android:layout_height="match_parent"-->
+                            <!--android:orientation="vertical"-->
+                            <!--android:weightSum="5"-->
+                            <!--android:layout_gravity="center">-->
+
+                            <!--<TextView-->
+                                <!--android:layout_width="match_parent"-->
+                                <!--android:layout_height="match_parent"-->
+                                <!--android:layout_weight="3"-->
+                                <!--android:paddingTop="10dp"-->
+                                <!--android:onClick="jtgl14"-->
+                                <!--android:paddingLeft="10dp"-->
+                                <!--android:textStyle="bold"-->
+                                <!--android:textColor="@android:color/black"-->
+                                <!--android:textSize="16sp"-->
+                                <!--android:text="tgl14" />-->
+
+                            <!--<LinearLayout-->
+                                <!--android:layout_width="match_parent"-->
+                                <!--android:layout_weight="2"-->
+                                <!--android:orientation="horizontal"-->
+                                <!--android:weightSum="3"-->
+                                <!--android:layout_height="match_parent">-->
+
+                                <!--<TextView-->
+                                    <!--android:id="@+id/j_tgl14"-->
+                                    <!--android:layout_width="match_parent"-->
+                                    <!--android:layout_height="match_parent"-->
+                                    <!--android:layout_weight="1"-->
+                                    <!--android:gravity="start|center"-->
+                                    <!--android:paddingLeft="10dp"-->
+                                    <!--android:textColor="@android:color/black"-->
+                                    <!--android:textSize="13sp"-->
+                                    <!--android:text="tanggal" />-->
+                                <!--<TextView-->
+                                    <!--android:layout_width="match_parent"-->
+                                    <!--android:layout_height="match_parent"-->
+                                    <!--android:gravity="center"-->
+                                    <!--android:layout_weight="1"-->
+                                    <!--android:textColor="@android:color/black"-->
+                                    <!--android:textSize="13sp"-->
+                                    <!--android:text="Sampai" />-->
+                                <!--<TextView-->
+                                    <!--android:id="@+id/j_tgl14_2"-->
+                                    <!--android:layout_width="match_parent"-->
+                                    <!--android:layout_height="match_parent"-->
+                                    <!--android:gravity="center"-->
+                                    <!--android:layout_weight="1"-->
+                                    <!--android:textColor="@android:color/black"-->
+                                    <!--android:textSize="13sp"-->
+                                    <!--android:text="tanggal" />-->
+                            <!--</LinearLayout>-->
+                        <!--</LinearLayout>-->
+                    <!--</FrameLayout>-->
+                <!--</LinearLayout>-->
+
+            <!--</android.support.v7.widget.CardView>-->
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:orientation="horizontal"
+                android:layout_weight="2"
+                android:weightSum="2"
+                android:layout_height="match_parent">
+                <Button
+                    android:id="@+id/btn_hapuspengingatj"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_margin="8dp"
+                    android:layout_weight="1"
+                    android:textAllCaps="false"
+                    android:textColor="@android:color/white"
+                    android:background="@android:color/holo_red_light"
+                    android:textSize="13sp"
+                    android:text="Hapus" />
+                <Button
+                    android:id="@+id/btn_simpanpengingatj"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_margin="8dp"
+                    android:textAllCaps="false"
+                    android:layout_weight="1"
+                    android:textColor="@android:color/white"
+                    android:background="@color/colorPrimary"
+                    android:textSize="13sp"
+                    android:text="Simpan" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

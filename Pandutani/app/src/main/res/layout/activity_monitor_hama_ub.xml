@@ -1,0 +1,821 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@color/cardview_light_background"
+    android:layout_height="match_parent"
+    tools:context=".pakar.ubi.MonitorHamaUbActivity">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:weightSum="100"
+        android:padding="16dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="10"
+            android:orientation="vertical" >
+
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical" >
+
+                    <TextView
+                        android:textColor="@color/cardview_dark_background"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Pilih Gejala"
+                        tools:text="Pilih Gejala"
+                        android:textAlignment="center"
+                        android:textSize="25sp" />
+
+                    <Space
+                        android:layout_width="match_parent"
+                        android:layout_height="20dp"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentStart="true" />
+
+                    <TextView
+                        android:textColor="@color/cardview_dark_background"
+                        android:text="1. Pertumbuhan bibit terhambat ?"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/textViewu2"
+                        tools:text="1. Apakah Penyakit menyerang daun tua ?" />
+
+                    <CheckBox
+                        android:text="Ya1"
+                        android:layout_gravity="right"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/checkBoxu2"
+                        tools:text="Ya" />
+                    <Space
+                        android:layout_width="match_parent"
+                        android:layout_height="10dp"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentStart="true" />
+
+                    <TextView
+                        android:textColor="@color/cardview_dark_background"
+                        android:text="2. Apakah pada kopi tua terdapat cacat berupa berlubang - lubang ?"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/textViewu3"
+                        tools:text="2. Apakah Bercak daun pada bagian bawah ?" />
+
+                    <CheckBox
+                        android:text="Ya2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="right"
+                        android:id="@+id/checkBoxu3"
+                        tools:text="Ya" />
+                    <Space
+                        android:layout_width="match_parent"
+                        android:layout_height="10dp"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentStart="true" />
+
+                    <TextView
+                        android:textColor="@color/cardview_dark_background"
+                        android:text="3. Apakah pada ranting pohon kopi terdapat lubang ?"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/textViewu4"
+                        tools:text="3. Apakah Bercak putih/coklat pada bagian atas daun ?" />
+
+                    <CheckBox
+                        android:text="Ya3"
+                        android:layout_width="wrap_content"
+                        android:layout_gravity="right"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/checkBoxu4"
+                        tools:text="Ya" />
+                    <Space
+                        android:layout_width="match_parent"
+                        android:layout_height="10dp"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentStart="true" />
+
+                    <TextView
+                        android:textColor="@color/cardview_dark_background"
+                        android:text="4. Apakah tidak terdapat buah pada ranting atau cabang ?"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/textViewu5"
+                        tools:text="4. Apakah Bercak tepi dibatasi lingkaran ungu ?" />
+
+                    <CheckBox
+                        android:text="Ya4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="right"
+                        android:id="@+id/checkBoxu5"
+                        tools:text="Ya" />
+                    <Space
+                        android:layout_width="match_parent"
+                        android:layout_height="10dp"
+                        />
+
+                    <TextView
+                        android:textColor="@color/cardview_dark_background"
+                        android:text="5. Apakah arah belokan keatas untuk bagian batang atau cabang yang rusak ?"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/textViewu6"
+                        tools:text="5. Apakah terdapat Bercak coklat ?" />
+
+                    <CheckBox
+                        android:text="Ya5"
+                        android:layout_gravity="right"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/checkBoxu6"
+                        tools:text="Ya" />
+
+                    <Space
+                        android:layout_width="match_parent"
+                        android:layout_height="10dp"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentStart="true" />
+
+                    <TextView
+                        android:textColor="@color/cardview_dark_background"
+                        android:text="6. Apakah munculnya campuran kotoran dengan serpihan jaringan didalam cabang atau batang yang rusak ?"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/textViewu7"
+                        tools:text="6. Apakah Daun berkerut ?" />
+
+                    <CheckBox
+                        android:text="Ya6"
+                        android:layout_gravity="right"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/checkBoxu7"
+                        tools:text="Ya" />
+
+                    <Space
+                        android:layout_width="match_parent"
+                        android:layout_height="10dp"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentStart="true" />
+
+                    <TextView
+                        android:textColor="@color/cardview_dark_background"
+                        android:text="7. Apakah keadaan mati, layu dan kering diatas lubang kerekan ?"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/textViewu9"
+                        tools:text="7. Apakah Daun rontok / gugur ?" />
+
+                    <CheckBox
+                        android:text="Ya7"
+                        android:layout_gravity="right"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/checkBoxu8"
+                        tools:text="Ya" />
+
+                    <Space
+                        android:layout_width="match_parent"
+                        android:layout_height="10dp"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentStart="true" />
+
+                    <TextView
+                        android:textColor="@color/cardview_dark_background"
+                        android:text="8. Apakah keadaan gugur dan mengering pada tunas bunga ?"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/textViewu10"
+                        tools:text="8. Apakah Daun berlubang ?" />
+
+                    <CheckBox
+                        android:text="Ya8"
+                        android:layout_gravity="right"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/checkBoxu9"
+                        tools:text="Ya" />
+
+                    <Space
+                        android:layout_width="match_parent"
+                        android:layout_height="10dp"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentStart="true" />
+
+                    <TextView
+                        android:textColor="@color/cardview_dark_background"
+                        android:text="9. Apakah Keadaan masak sebelum saatnya dan mengerut pada buah kopi ?"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/textViewu11"
+                        tools:text="9. Apakah Daun menguning ?" />
+
+                    <CheckBox
+                        android:text="Ya9"
+                        android:layout_gravity="right"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/checkBoxu10"
+                        tools:text="Ya" />
+
+                    <Space
+                        android:layout_width="match_parent"
+                        android:layout_height="10dp"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentStart="true" />
+
+                    <TextView
+                        android:textColor="@color/cardview_dark_background"
+                        android:text="10. Apakah melemahnya tanaman ?"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/textViewu12"
+                        tools:text="10. Apakah Daun kering ?" />
+
+                    <CheckBox
+                        android:text="Ya10"
+                        android:layout_gravity="right"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/checkBoxu11"
+                        tools:text="Ya" />
+
+                    <Space
+                        android:layout_width="match_parent"
+                        android:layout_height="10dp"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentStart="true" />
+
+                    <TextView
+                        android:textColor="@color/cardview_dark_background"
+                        android:text="11. Apakah keterhambatan pertumbuhan tanaman ?"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/textViewu13"
+                        tools:text="11. Apakah Ada jamur di bagian bawah daun ?" />
+
+                    <CheckBox
+                        android:text="Ya11"
+                        android:layout_gravity="right"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/checkBoxu12"
+                        tools:text="Ya" />
+
+                    <Space
+                        android:layout_width="match_parent"
+                        android:layout_height="10dp"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentStart="true" />
+
+                    <TextView
+                        android:textColor="@color/cardview_dark_background"
+                        android:text="12. Apakah buah kopi dan daun tertutupi cendawan jelaga ?"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/textViewu14"
+                        tools:text="12. Apakah Bercak berukuran besar ?" />
+
+                    <CheckBox
+                        android:text="Ya12"
+                        android:layout_gravity="right"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/checkBoxu13"
+                        tools:text="Ya" />
+
+                    <Space
+                        android:layout_width="match_parent"
+                        android:layout_height="10dp"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentStart="true" />
+
+                    <TextView
+                        android:textColor="@color/cardview_dark_background"
+                        android:text="13. Apakah terdapat bercak berwarna kuning pada sisi bawah daun ?"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/textViewu15"
+                        tools:text="13. Apakah Bercak sering pada ujung daun ?" />
+
+                    <CheckBox
+                        android:text="Ya13"
+                        android:layout_gravity="right"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/checkBoxu14"
+                        tools:text="Ya" />
+
+                    <Space
+                        android:layout_width="match_parent"
+                        android:layout_height="10dp"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentStart="true" />
+
+                    <TextView
+                        android:textColor="@color/cardview_dark_background"
+                        android:text="14. Terbentuk tepung berwarna jingga pada sisi bawah daun ?"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/textViewu16"
+                        tools:text="14. Apakah Bercak berbentuk V terbalik ?" />
+
+                    <CheckBox
+                        android:text="Ya14"
+                        android:layout_gravity="right"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/checkBoxu15"
+                        tools:text="Ya" />
+
+                    <Space
+                        android:layout_width="match_parent"
+                        android:layout_height="10dp"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentStart="true" />
+
+                    <TextView
+                        android:textColor="@color/cardview_dark_background"
+                        android:text="15. Terdapat warna cokelat tua sampai kering dan hitam pada sisi bawah daun ?"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/textViewu17"
+                        tools:text="15. Apakah Daun bagian atas berwarna coklat merata ?" />
+
+                    <CheckBox
+                        android:text="Ya15"
+                        android:layout_gravity="right"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/checkBoxu16"
+                        tools:text="Ya" />
+
+                    <Space
+                        android:layout_width="match_parent"
+                        android:layout_height="10dp"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentStart="true" />
+
+                    <TextView
+                        android:textColor="@color/cardview_dark_background"
+                        android:text="16. Keadaan daun awalnya berwarna kuning selanjutnya dikelilingi bercak halo dengan warna kuning ?"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/textViewu18"
+                        tools:text="16. Apakah Daun bagian bawah berwarna abu-abu ?" />
+
+                    <CheckBox
+                        android:text="Ya16"
+                        android:layout_gravity="right"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/checkBoxu17"
+                        tools:text="Ya" />
+
+                    <Space
+                        android:layout_width="match_parent"
+                        android:layout_height="10dp"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentStart="true" />
+
+                    <TextView
+                        android:textColor="@color/cardview_dark_background"
+                        android:text="17. Pada sisi yang lebih banyak menerima cahaya, buah mempunyai warna bercak cokelat ?"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/textViewu19"
+                        tools:text="17. Apakah Bagian tengah bercak berwarna abu-abu penghasil jamur ?" />
+
+                    <CheckBox
+                        android:text="Ya17"
+                        android:layout_gravity="right"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/checkBoxu18"
+                        tools:text="Ya" />
+
+                    <Space
+                        android:layout_width="match_parent"
+                        android:layout_height="10dp"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentStart="true" />
+
+                    <TextView
+                        android:textColor="@color/cardview_dark_background"
+                        android:text="18. Keadaan busuk sampai ke biji pada buah kopi ?"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/textViewu20"
+                        tools:text="18.Apakah Menyerang daun muda ?" />
+
+                    <CheckBox
+                        android:text="Ya18"
+                        android:layout_gravity="right"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/checkBoxu19"
+                        tools:text="Ya" />
+
+                    <Space
+                        android:layout_width="match_parent"
+                        android:layout_height="10dp"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentStart="true" />
+
+                    <TextView
+                        android:textColor="@color/cardview_dark_background"
+                        android:text="19. Keadaan kerdil pada tanaman yang terserang ?"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/textViewu21"
+                        tools:text="19. Apakah Menyerang daun dan batang ?" />
+
+                    <CheckBox
+                        android:text="Ya19"
+                        android:layout_gravity="right"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/checkBoxu20"
+                        tools:text="Ya" />
+
+                    <Space
+                        android:layout_width="match_parent"
+                        android:layout_height="10dp"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentStart="true" />
+
+                    <TextView
+                        android:textColor="@color/cardview_dark_background"
+                        android:text="20. Keadaan daun berguguran dan menguning ?"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/textViewu22"
+                        tools:text="20. Apakah Gejala awal berupa lesion berwarna abu-abu ?" />
+
+                    <CheckBox
+                        android:text="Ya20"
+                        android:layout_gravity="right"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/checkBoxu21"
+                        tools:text="Ya" />
+
+                    <Space
+                        android:layout_width="match_parent"
+                        android:layout_height="10dp"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentStart="true" />
+
+                    <TextView
+                        android:textColor="@color/cardview_dark_background"
+                        android:text="21. Jumlah bunga yang sedikit ?"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/textViewu23"
+                        tools:text="21. Apakah Lesion dibatasi tulang daun dan membentuk sudut ?" />
+
+                    <CheckBox
+                        android:text="Ya21"
+                        android:layout_gravity="right"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/checkBoxu22"
+                        tools:text="Ya" />
+
+                    <Space
+                        android:layout_width="match_parent"
+                        android:layout_height="10dp"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentStart="true" />
+
+                    <TextView
+                        android:textColor="@color/cardview_dark_background"
+                        android:text="22. Prematur pada bunga kopi ?"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/textViewu24"
+                        tools:text="22. Apakah Lesio meluas menjadi bercak nekrotik ?" />
+
+                    <CheckBox
+                        android:text="Ya22"
+                        android:layout_gravity="right"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/checkBoxu23"
+                        tools:text="Ya" />
+
+                    <Space
+                        android:layout_width="match_parent"
+                        android:layout_height="10dp"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentStart="true" />
+
+                    <TextView
+                        android:textColor="@color/cardview_dark_background"
+                        android:text="23. Bunga kosong dengan jumlah banyak ?"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/textViewu25"
+                        tools:text="23. Apakah Perlendiran masa bakteri yang terjadi pada tangkai, helai daun dan batang ?" />
+
+                    <CheckBox
+                        android:text="Ya23"
+                        android:layout_gravity="right"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/checkBoxu24"
+                        tools:text="Ya" />
+
+                    <Space
+                        android:layout_width="match_parent"
+                        android:layout_height="10dp"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentStart="true" />
+
+                    <TextView
+                        android:textColor="@color/cardview_dark_background"
+                        android:text="24. Keadaan berwarna hitam atau cokelat serta membusuk pada bagian akar-akar serabut ?"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/textViewu26"
+                        tools:text="24. Apakah Mati pucuk ?" />
+
+                    <CheckBox
+                        android:text="Ya24"
+                        android:layout_gravity="right"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/checkBoxu25"
+                        tools:text="Ya" />
+
+                    <Space
+                        android:layout_width="match_parent"
+                        android:layout_height="10dp"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentStart="true" />
+
+                    <TextView
+                        android:textColor="@color/cardview_dark_background"
+                        android:text="25. Keadaan layu mendadak pada ranting atau cabang yang terserang ?"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/textViewu27"
+                        tools:text="25. Apakah Menyerang permukaan barang, tangkai daun dan daun ?" />
+
+                    <CheckBox
+                        android:text="Ya25"
+                        android:layout_gravity="right"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/checkBoxu26"
+                        tools:text="Ya" />
+
+                    <Space
+                        android:layout_width="match_parent"
+                        android:layout_height="10dp"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentStart="true" />
+
+                    <TextView
+                        android:textColor="@color/cardview_dark_background"
+                        android:text="26. Pada celah-celah atau lentisel terbentuk gambaran hifa dengan warna putih ?"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/textViewu28"
+                        tools:text="26. Apakah Terdapat tonjolan pada permukaan batang ?" />
+
+                    <CheckBox
+                        android:text="Ya26"
+                        android:layout_gravity="right"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/checkBoxu27"
+                        tools:text="Ya" />
+
+                    <Space
+                        android:layout_width="match_parent"
+                        android:layout_height="10dp"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentStart="true" />
+
+                    <TextView
+                        android:textColor="@color/cardview_dark_background"
+                        android:text="27. Warna merah jambu pada lapisan kerak ?"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        tools:text="27. Apakah Tangkai daun mudah patah ?" />
+
+                    <CheckBox
+                        android:text="Ya27"
+                        android:layout_gravity="right"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/checkBoxu28"
+                        tools:text="Ya" />
+
+                    <Space
+                        android:layout_width="match_parent"
+                        android:layout_height="10dp"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentStart="true" />
+
+                    <TextView
+                        android:textColor="@color/cardview_dark_background"
+                        android:text="27. Warna merah jambu pada lapisan kerak ?"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        tools:text="28. Apakah Daun layu ?" />
+
+                    <CheckBox
+                        android:text="Ya27"
+                        android:layout_gravity="right"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/checkBoxu29"
+                        tools:text="Ya" />
+
+                    <Space
+                        android:layout_width="match_parent"
+                        android:layout_height="10dp"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentStart="true" />
+
+                    <TextView
+                        android:textColor="@color/cardview_dark_background"
+                        android:text="27. Warna merah jambu pada lapisan kerak ?"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        tools:text="29. Apakah Pengerutan pada bagian gabus ?" />
+
+                    <CheckBox
+                        android:text="Ya27"
+                        android:layout_gravity="right"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/checkBoxu30"
+                        tools:text="Ya" />
+
+                    <Space
+                        android:layout_width="match_parent"
+                        android:layout_height="10dp"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentStart="true" />
+
+                    <TextView
+                        android:textColor="@color/cardview_dark_background"
+                        android:text="27. Warna merah jambu pada lapisan kerak ?"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        tools:text="30. Apakah Batang mudah patah ?" />
+
+                    <CheckBox
+                        android:text="Ya27"
+                        android:layout_gravity="right"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/checkBoxu31"
+                        tools:text="Ya" />
+
+                    <Space
+                        android:layout_width="match_parent"
+                        android:layout_height="10dp"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentStart="true" />
+
+                    <TextView
+                        android:textColor="@color/cardview_dark_background"
+                        android:text="27. Warna merah jambu pada lapisan kerak ?"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        tools:text="31. Apakah Menyerang pangkal batang, akar dan umbi ?" />
+
+                    <CheckBox
+                        android:text="Ya27"
+                        android:layout_gravity="right"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/checkBoxu32"
+                        tools:text="Ya" />
+
+                    <Space
+                        android:layout_width="match_parent"
+                        android:layout_height="10dp"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentStart="true" />
+
+                    <TextView
+                        android:textColor="@color/cardview_dark_background"
+                        android:text="27. Warna merah jambu pada lapisan kerak ?"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        tools:text="32. Apakah Daun gugur premature ?" />
+
+                    <CheckBox
+                        android:text="Ya27"
+                        android:layout_gravity="right"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/checkBoxu33"
+                        tools:text="Ya" />
+
+                    <Space
+                        android:layout_width="match_parent"
+                        android:layout_height="10dp"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentStart="true" />
+
+                    <TextView
+                        android:textColor="@color/cardview_dark_background"
+                        android:text="27. Warna merah jambu pada lapisan kerak ?"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        tools:text="33. Apakah Kerusakan warna pada perakaran ?" />
+
+                    <CheckBox
+                        android:text="Ya27"
+                        android:layout_gravity="right"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/checkBoxu34"
+                        tools:text="Ya" />
+
+                    <Space
+                        android:layout_width="match_parent"
+                        android:layout_height="10dp"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentStart="true" />
+
+                    <TextView
+                        android:textColor="@color/cardview_dark_background"
+                        android:text="27. Warna merah jambu pada lapisan kerak ?"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        tools:text="34. Apakah Busuk ?" />
+
+                    <CheckBox
+                        android:text="Ya27"
+                        android:layout_gravity="right"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/checkBoxu35"
+                        tools:text="Ya" />
+
+                    <Space
+                        android:layout_width="match_parent"
+                        android:layout_height="10dp"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentStart="true" />
+
+                    <TextView
+                        android:textColor="@color/cardview_dark_background"
+                        android:text="27. Warna merah jambu pada lapisan kerak ?"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        tools:text="35. Apakah Umbi berwarna gelap dan berbau busuk ?" />
+
+                    <CheckBox
+                        android:text="Ya27"
+                        android:layout_gravity="right"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/checkBoxu36"
+                        tools:text="Ya" />
+                </LinearLayout>
+            </ScrollView>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="90">
+
+            <Button
+                android:text="Proses"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/cardview_shadow_start_color"
+                android:id="@+id/button_prosesu"
+                android:textStyle="normal|bold"
+                android:textAlignment="center"
+                android:textAllCaps="false"
+                android:textSize="14sp" />
+        </LinearLayout>
+    </LinearLayout>
+
+</RelativeLayout>

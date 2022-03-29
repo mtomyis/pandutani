@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "895606130330",
+    "firebase_url": "https://pandutani-c97bd.firebaseio.com",
+    "project_id": "pandutani-c97bd",
+    "storage_bucket": "pandutani-c97bd.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:895606130330:android:8e38b04c39b3b094",
+        "android_client_info": {
+          "package_name": "com.uiuaadingding.tomtom.pandutani"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "895606130330-dehbt6u360q264h1soshij7uqorct8ie.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.uiuaadingding.tomtom.pandutani",
+            "certificate_hash": "91c70e6f66b3ed02aebeee5800afa58abc56604a"
+          }
+        },
+        {
+          "client_id": "895606130330-p92obrlfjckcicn0dt2epacbrp3ci3pb.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBbwXb6UpgRq5STyg2CJEYtzj4MU3SqyHE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "895606130330-p92obrlfjckcicn0dt2epacbrp3ci3pb.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
